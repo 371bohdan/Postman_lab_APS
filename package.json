@@ -6,12 +6,17 @@
   "scripts": {
     "start": "nodemon app.js",
     "test": "jest",
-    "testmocha": "mocha recordPlay.spec.js"
+    "testmocha": "mocha recordPlay.spec.js",
+    "lint": "eslint routes"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-plugin-no-use-extend-native": "^0.5.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-react": "^7.32.2",
     "gulp": "^4.0.2",
     "gulp-jest": "^4.0.4",
     "gulp-sass": "^5.1.0",

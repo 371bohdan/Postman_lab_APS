@@ -1,0 +1,18 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es2021": true
+    },
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest"
+    },
+    "plugins": [
+        "no-use-extend-native"
+      ],
+      "rules": {
+        "no-use-extend-native/no-use-extend-native": "error"
+      }
+}
