@@ -10,7 +10,6 @@ const { get } = require('http');
 require('dotenv').config();
 
 
-
 function isLoggedIn(req, res, next){
     if(req.isAuthenticated() && req.user) return next();
     res.redirect('/login');

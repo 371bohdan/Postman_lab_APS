@@ -10,9 +10,12 @@
         "ecmaVersion": "latest"
     },
     "plugins": [
-        "no-use-extend-native"
+        "no-use-extend-native",
+        "import",
+        "security"
       ],
       "rules": {
-        "no-use-extend-native/no-use-extend-native": "error"
+        "no-use-extend-native/no-use-extend-native": "error",
+        "security/detect-non-literal-regexp": "warn"
       }
 }
