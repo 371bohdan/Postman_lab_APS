@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "8f829077-97c2-49cc-95b7-87bda25fbbc9",
+		"name": "water_postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27658615",
+		"_collection_link": "https://solar-robot-204977.postman.co/workspace/get_test~f309f9a8-2ed3-4306-95a7-88370c366db2/collection/27658615-8f829077-97c2-49cc-95b7-87bda25fbbc9?action=share&creator=27658615&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login to profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"rasty\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Get profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/profile"
+			},
+			"response": []
+		},
+		{
+			"name": "GET add data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/water"
+			},
+			"response": []
+		},
+		{
+			"name": "Add data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name_place\":\"Postaman\",\r\n    \"coordinateX\": \"77.777\",\r\n    \"coordinateY\": \"77.777\",\r\n    \"year\": \"2000\",\r\n    \"season\": \"winter\",\r\n    \"chemical_index\": \"NO3-\",\r\n    \"result\": \"20.1\",\r\n    \"comment\": \"Postamn pass complete\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/water"
+			},
+			"response": []
+		}
+	]
+}
