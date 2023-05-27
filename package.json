@@ -9,7 +9,6 @@
     "newman": "jest ./tests/newman.test.js",
     "testmocha": "mocha recordPlay.spec.js",
     "lint": "eslint routes"
-
   },
   "keywords": [],
   "author": "",
